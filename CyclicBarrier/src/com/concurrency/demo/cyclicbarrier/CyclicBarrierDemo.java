@@ -1,4 +1,4 @@
-package com.cottrellstory.cyclicbarrier;
+package com.concurrency.demo.cyclicbarrier;
 
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
@@ -15,7 +15,7 @@ public class CyclicBarrierDemo {
   private static final int NUM_THREADS = 4;
   private static final int MAX_WAIT_TIME_MS = 5000;
 
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) {
     CyclicBarrierDemo cyclicBarrierDemo = new CyclicBarrierDemo(NUM_THREADS);
     cyclicBarrierDemo.launchDemo();
   }
